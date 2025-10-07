@@ -2,7 +2,7 @@ const { Telegraf, Markup } = require('telegraf');
 const fetch = require('node-fetch'); 
 require('dotenv').config();
 
-const bot = new Telegraf(8136595675:AAHFP0Al9SxcU0VXGpZAoWQ2d1x8FXvmmys);
+const bot = new Telegraf(process.env.TOKEN);
 
 // /start command
 bot.start((ctx) => {
