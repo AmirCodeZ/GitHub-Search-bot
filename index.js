@@ -47,17 +47,6 @@ bot.command('search', async (ctx) => {
     );
 });
 
-const app = express();
-app.use(express.json());
 
-app.use(bot.webhookCallback("/webhook"));
-
-const port = process.env.PORT || 3000;
-
-bot.telegram.setWebhook(process.env.WEBHOOK_URL + "/webhook");
-
-app.listen(port, () => {
-  console.log("Bot server running on port:", port);
-});
 
 bot.launch();
