@@ -49,4 +49,6 @@ bot.command('search', async (ctx) => {
 
 
 
-bot.launch();
+bot.launch({
+    polling: true
+});
